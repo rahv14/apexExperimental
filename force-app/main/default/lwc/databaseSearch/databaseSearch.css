@@ -1,0 +1,119 @@
+.Back {
+  text-align: left;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+  margin: 10px;
+}
+
+.databaseSearchTextTypography {
+  color: var(--Black, #000);
+  font-family: Source Sans Pro;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.databaseSearchTextContent {
+  color: var(--Black, #000);
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.CityLayout {
+  display: flex;
+  width: 314px;
+  height: 32px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--dark-grey, #595959);
+  background: var(--White, #fff);
+}
+
+.CountryLayout {
+  display: flex;
+  width: 314px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--dark-grey, #595959);
+  background: var(--White, #fff);
+}
+
+.Common {
+  color: var(--Black, #000);
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* 02 - Label / Default */
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  /* width: 105px;
+  height: 13px;
+  margin: 0 199px 8px 0;
+  letter-spacing: 0.38px; */
+}
+
+.reportButton {
+  color: var(--White, #fff);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* 03 - Body/Default */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+}
+
+.headerStyle {
+  background: var(--dark-grey, #ccc);
+
+  /* 02 - Container/Border Bottom */
+  box-shadow: 0px 1px 0px 0px #c9c9c9;
+  color: var(--Black, #000);
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* 03 - Body / Bold */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 153.846% */
+}
+
+.headerRow {
+  color: var(--Black, #000);
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* 03 - Body/Default */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+  /* background: var(--White, #fff); */
+  /* 02 - Container/Border Bottom */
+  box-shadow: 0px 1px 0px 0px #c9c9c9;
+}
+
+.headerData {
+  /*  display: flex; */
+  height: 60px;
+  padding: 5px 12px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
