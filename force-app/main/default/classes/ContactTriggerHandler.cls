@@ -35,13 +35,13 @@ public class ContactTriggerHandler {
     }
   }
   public static void onDelete(List<Account> listDeleteOldAccount) {
-    Set<Id> accIds = new Set<Id>();
+    Set<Id> setAccIds = new Set<Id>();
     for (Account acc : listDeleteOldAccount) {
-      accIds.add(acc.Id);
+      SetAccIds.add(acc.Id);
     }
-    if (accIds.size() > 0) {
+    if (setAccIds.size() > 0) {
       List<Contact> listContactToUpdate = new List<Contact>();
-      for (Contact con : [SELECT Id, AccountId FROM Contact WHERE AccountId IN :accIds]) {
+      for (Contact con : [SELECT Id, AccountId FROM Contact WHERE AccountId IN :setAccIds]) {
         con.AccountId = null;
         listContactToUpdate.add(con);
       }
