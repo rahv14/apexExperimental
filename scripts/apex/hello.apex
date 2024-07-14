@@ -1,4 +1,15 @@
 /**
+ * @description       : 
+ * @author            : Rahul V
+ * @group             : 
+ * @last modified on  : 07-14-2024
+ * @last modified by  : Rahul V 
+ * Modifications Log
+ * Ver   Date         Author    Modification
+ * 1.0   07-14-2024   Rahul V   Initial Version
+**/
+<<<<<<< HEAD
+/**
  * @description       :
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             :
@@ -51,3 +62,5 @@ for (Id accountId : accountIds) {
 }
 
 update acctList;
+
+

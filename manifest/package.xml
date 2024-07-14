@@ -32,5 +32,9 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+<<<<<<< HEAD
     <version>58.0</version>
+=======
+    <version>59.0</version>
+>>>>>>> a54a34efa5de63bbd2b0190a72e9338868c30400
 </Package>
