@@ -2,36 +2,13 @@
  * @description       :
  * @author            : Rahul V
  * @group             :
- * @last modified on  : 05-29-2024
+ * @last modified on  : 07-14-2024
  * @last modified by  : Rahul V
  * Modifications Log
  * Ver   Date         Author    Modification
  * 1.0   03-20-2024   Rahul V   Initial Version
  **/
 public with sharing class CountChildRecordTriggerHandler {
-  /*  public static void CountContact(List<Contact> listContact, Boolean isDelete) {
-    Map<Id, List<Contact>> mapContactCount = new Map<Id, List<Contact>>();
-    for (Contact con : listContact) {
-      if (con.AccountId != null) {
-        if (!mapContactCount.containsKey(con.AccountId)) {
-          mapContactCount.put(con.AccountId, new List<Contact>());
-        }
-        mapContactCount.get(con.AccountId).add(con);
-      }
-    }
-    if (mapContactCount.size() > 0) {
-      List<Account> listAccount = [SELECT Id, NumberOfContacts__c FROM Account WHERE Id IN :mapContactCount.keySet()];
-      for (Account acc : listAccount) {
-        if (acc.NumberOfContacts__c == null) {
-          acc.NumberOfContacts__c = mapContactCount.get(acc.Id).size();
-        } else if (isDelete) {
-          acc.NumberOfContacts__c -= mapContactCount.get(acc.Id).size();
-        } else {
-          acc.NumberOfContacts__c += mapContactCount.get(acc.Id).size();
-        }
-      }
-      update listAccount;
-    } */
   public static void handleAfterInsert(List<Contact> listContact) {
     set<Id> setAccountid = new Set<Id>();
     list<Account> lstAc = new List<Account>();
@@ -130,10 +107,6 @@ public with sharing class CountChildRecordTriggerHandler {
     }
   }
 
-  /* public static void handleAfterUpdate(List<Contact> updatedContacts, Map<Id, Contact> oldContactMap) {
-    updateAccountContactCount(updatedContacts);
-  } */
-
   public static void handleAfterDelete(List<Contact> deletedContacts) {
     Set<Id> setAccountId = new Set<Id>();
     List<Account> listAccount = new List<Account>();
@@ -165,8 +138,3 @@ public with sharing class CountChildRecordTriggerHandler {
     }
   }
 }
-
-/* public static void handleAfterUndelete(List<Contact> undeletedContacts) {
-    updateAccountContactCount(undeletedContacts);
-  } */
-

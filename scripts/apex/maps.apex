@@ -10,3 +10,12 @@ for (Contact acc : listContact) {
 
 List<Contact> listCountry = mapNameToContact.get('USA');
 System.debug('Contacts Name: ' + listCountry);
+
+Map<Id, Contact> mapcontact = new Map<Id, Contact>([SELECT Id, AccountId, Name, MailingCountry FROM Contact LIMIT 50]);
+for (Contact con : mapcontact.values()) {
+  System.debug('mapcontact ' + con.Name);
+}
+for (Id conId : mapcontact.keyset()) {
+  System.debug('Contact Id ' + conId);
+  System.debug('Contact Name ' + mapcontact.get(conId).Name);
+}

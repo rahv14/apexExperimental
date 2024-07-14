@@ -1,4 +1,5 @@
 {
+  "plugins": ["prettier-plugin-apex"],
   "overrides": [
     {
       "files": "**/lwc/**/*.html",
