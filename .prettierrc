@@ -1,0 +1,47 @@
+{
+  "trailingComma": "none",
+  "plugins": ["prettier-plugin-apex", "@prettier/plugin-xml"],
+  "overrides": [
+    {
+      "files": "**/lwc/**/*.html",
+      "options": { "parser": "lwc" }
+    },
+    {
+      "files": "*.{cmp,page,component}",
+      "options": { "parser": "html", "printwidth": 80 }
+    },
+    {
+      "files": "**/*.{cls,trigger,apex}",
+      "options": {
+        "parser": "apex",
+        "printWidth": 300,
+        "tabWidth": 2,
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "**/apex/**/*.{cls,apex}",
+      "options": {
+        "parser": "apex-anonymous",
+        "singleQuote": true,
+        "printWidth": 300
+      }
+    }
+  ],
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 300,
+  "proseWrap": "always",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false
+}
