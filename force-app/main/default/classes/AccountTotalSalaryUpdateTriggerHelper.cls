@@ -2,7 +2,7 @@
  * @description       : Trigger Handler for AccountTotalSalaryUpdateTrigger
  * @author            : Rahul V
  * @group             : SF
- * @last modified on  : 05-01-2025
+ * @last modified on  : 06-01-2025
  * @last modified by  : Rahul V
  * Modifications Log
  * Ver   Date         Author    Modification
@@ -19,7 +19,7 @@ public with sharing class AccountTotalSalaryUpdateTriggerHelper {
     Set<Id> setContactId = new Set<Id>();
     if (listContactNew?.isEmpty() == false) {
       for (Contact con : listContactNew) {
-        if (con.Id != mapContactOld.get(con.Id)) {
+        if (con.AccountId != mapContactOld.get(con.Id).AccountId) {
           setContactId?.add(con.AccountId);
         }
       }

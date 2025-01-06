@@ -4,7 +4,7 @@
                         Total_Salary__c on the Account with the sum of the Salary__c field from its related Contacts.
  * @author            : Rahul V
  * @group             : SF
- * @last modified on  : 05-01-2025
+ * @last modified on  : 06-01-2025
  * @last modified by  : Rahul V
  * Modifications Log
  * Ver   Date         Author    Modification
